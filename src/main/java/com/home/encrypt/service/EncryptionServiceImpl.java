@@ -14,14 +14,14 @@ import java.nio.charset.Charset;
 import java.security.*;
 
 
-public class CookieEncryptionServiceImpl implements CookieEncryptionService {
+public class EncryptionServiceImpl implements EncryptionService {
 
     private static final String ENCRYPTION_ALGORITHM = "AES";
     public static final String HASH_ALGORITHM = "MD5";
     private static final Charset DEFAULT_CHARSET = Charsets.UTF_8;
 
 
-    private static final Logger LOG = LoggerFactory.getLogger(CookieEncryptionServiceImpl.class);
+    private static final Logger LOG = LoggerFactory.getLogger(EncryptionServiceImpl.class);
 
     @Override
     public String encryptCookie(String cookieValue, String ipAddress, String browserId) {

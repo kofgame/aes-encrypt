@@ -6,12 +6,12 @@ import org.junit.Test;
 import java.security.NoSuchAlgorithmException;
 
 
-public class CookieEncryptionServiceTest {
+public class EncryptionServiceTest {
 
     public static final String TEST_IP_ADDRESS = "localhost";
     public static final String TEST_BROWSER_ID = "Chrome/61.0.3163.10012345";
 
-    private CookieEncryptionServiceImpl sut = new CookieEncryptionServiceImpl();
+    private EncryptionServiceImpl sut = new EncryptionServiceImpl();
 
     @Test
     public void shouldEncryptAndDecryptToOriginalValue() throws NoSuchAlgorithmException {

@@ -1,6 +1,6 @@
 package com.home.encrypt.service;
 
-public interface CookieEncryptionService {
+public interface EncryptionService {
 
     /**
      * Encrypts cookieValue, using provided ipAddress and browserId as compound key
